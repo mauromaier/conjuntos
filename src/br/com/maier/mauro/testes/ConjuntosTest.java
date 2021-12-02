@@ -1,10 +1,17 @@
-package testes;
+package br.com.maier.mauro.testes;
+
+import static br.com.maier.mauro.utils.ConjuntosUtils.configurarRetorno;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import conjuntos.Conjuntos;
+import br.com.maier.mauro.conjuntos.Conjuntos;
 
+/**
+ * 
+ * @author mauro maier
+ *
+ */
 public class ConjuntosTest {
 
 	private static final char[] CONJUNTO_A = { 'a', 'b', 'c', 'd' };
@@ -15,13 +22,13 @@ public class ConjuntosTest {
 	@Test
 	void testarInterseccao() {
 		Conjuntos qc = new Conjuntos();
-		Assertions.assertArrayEquals(INTERSECCAO_A_B, qc.interseccao(CONJUNTO_A, CONJUNTO_B));
+		Assertions.assertArrayEquals(INTERSECCAO_A_B, configurarRetorno(qc.interseccao(CONJUNTO_A, CONJUNTO_B)));
 	}
 
 	@Test
 	void testarUniao() {
 		Conjuntos qc = new Conjuntos();
-		Assertions.assertArrayEquals(UNIAO_A_B, qc.uniao(CONJUNTO_A, CONJUNTO_B));
+		Assertions.assertArrayEquals(UNIAO_A_B, configurarRetorno(qc.uniao(CONJUNTO_A, CONJUNTO_B)));
 	}
 
 }

@@ -1,7 +1,12 @@
-package execucao;
+package br.com.maier.mauro.execucao;
 
-import conjuntos.Conjuntos;
+import br.com.maier.mauro.conjuntos.Conjuntos;
 
+/**
+ * 
+ * @author mauro maier
+ *
+ */
 public class ExecucaoConjuntos {
 
 	public static void main(String[] args) {
@@ -11,6 +16,7 @@ public class ExecucaoConjuntos {
 		System.out.println(questaoConjuntos.interseccaoBC());
 		System.out.println(questaoConjuntos.uniaoAB());
 		System.out.println("fim");
+
 	}
 
 }
